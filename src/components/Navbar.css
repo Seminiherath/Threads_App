@@ -1,0 +1,79 @@
+/* components/Navbar.css */
+.navbar {
+  background-color: #000;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #262626;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Active link styling */
+.nav-link.active, .navbar-logo.active {
+  color: #0095f6; /* Instagram/Threads blue */
+  font-weight: bold;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  align-items: left;
+
+}
+
+.navbar-search input {
+  background-color: #262626;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: white;
+  width: 200px;
+  font-size: 14px;
+  outline: none;
+}
+
+.navbar-search input::placeholder {
+  color: #ccc;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .navbar-search input {
+    width: 120px;
+  }
+  .navbar-links {
+    gap: 12px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+}

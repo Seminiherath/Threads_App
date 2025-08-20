@@ -1,13 +1,21 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import './App.css';
-import Threadform from '..pages/Threadform';
 
 function App() {
   return (
-    <div className="App">
-     <h3>Threads Application from ballerina </h3>
-     <Threadform/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Add more routes later: /explore, /profile */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,42 @@
+/* src/components/ThreadComposer.css */
+.composer {
+  background-color: #111;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  position: relative; /* For positioning the button */
+}
+
+.composer textarea {
+  width: 100%;
+  background-color: #262626;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  resize: none;
+  font-size: 16px;
+  margin-bottom:40px;
+  outline: none;
+  height: 100px; /* Fixed height for consistency */
+}
+
+.composer button {
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+
+.composer button:disabled {
+  background-color: #30c7f9f9;
+  cursor: not-allowed;
+}

@@ -1,0 +1,56 @@
+/* src/components/ThreadItem.css */
+.thread-item {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #262626;
+  background-color: #000;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.thread-content {
+  flex: 1;
+}
+
+.thread-header {
+  display: flex;
+  gap: 8px;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.thread-header strong {
+  color: white;
+}
+
+.thread-content p {
+  color: white;
+  margin: 4px 0;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.thread-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.thread-actions button {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.thread-actions button:hover {
+  color: white;
+}

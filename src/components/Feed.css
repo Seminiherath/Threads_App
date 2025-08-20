@@ -1,0 +1,13 @@
+/* src/components/Feed.css */
+.feed {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.empty-feed {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin: 20px 0;
+}

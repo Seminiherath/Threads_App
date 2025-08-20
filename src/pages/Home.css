@@ -1,0 +1,7 @@
+/* src/pages/Home.css */
+.home {
+  min-height: 100vh;
+  background-color: #353535;
+  color: white;
+  padding-bottom: 20px;
+}
